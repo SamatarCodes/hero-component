@@ -3,6 +3,8 @@
 $primary-color: #554ee5;
 $text-color: #3f4958;
 $button-color: #e5edff;
+$hamburger-color: #9fa6b2;
+
 *,
 *::before,
 *::after {
@@ -15,6 +17,11 @@ body {
   font-size: 62.5%;
   line-height: 1.7;
   font-family: 'Roboto', sans-serif;
+
+  background: lightgrey;
+}
+.card {
+  height: 95vh;
 }
 
 ul {
@@ -30,6 +37,12 @@ a {
   font-size: 1rem;
   width: 90%;
   margin: 1.5rem auto;
+}
+
+.header__logo {
+  i {
+    color: $primary-color;
+  }
 }
 
 .header__navbar {
@@ -58,28 +71,37 @@ a {
     margin-top: 1rem;
     background: white;
     border-radius: 0.5rem;
-    padding-left: 0.5rem;
+
     box-shadow: 2px 4px 10px #efefef;
   }
 
   //li
   .header__list {
     padding: 0.3rem 0.4rem;
+    padding-left: 0.5rem;
+
+    &:first-child {
+      margin-top: 2rem;
+    }
 
     &:last-child {
       text-align: center;
       background-color: #f9fafb;
-      margin: 0;
-    }
 
-    &:first-child {
-      margin-top: 2rem;
+      margin: 0;
+      color: $primary-color;
+      padding: 0.75rem 0;
+      margin-top: 0.7rem;
     }
 
     &:hover {
       background: $button-color;
     }
   }
+}
+
+.hamburger-icon {
+  color: $hamburger-color;
 }
 
 .header__text-box {
@@ -113,7 +135,7 @@ a {
 
 .btn {
   //   outline: 1px solid blue;
-  width: 75%;
+  width: 65%;
   margin: 1rem auto;
   display: flex;
   justify-content: space-around;
@@ -132,5 +154,19 @@ a {
     border-radius: 0.375rem;
     color: $primary-color;
     font-size: 1.125rem;
+  }
+}
+
+.image-box {
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 831px) {
+  .image-box {
+    img {
+      height: 25rem;
+    }
   }
 }

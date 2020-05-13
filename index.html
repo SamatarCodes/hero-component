@@ -11,53 +11,58 @@
     <title>Hero Section</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navbar">
-        <!-- logo -->
-        <div class="header__logo">
-          <i class="fas fa-laptop fa-lg"></i>
-        </div>
-        <!-- input -->
-        <input type="checkbox" id="header__toggle" class="header__toggle" />
-        <!-- navbar menu  -->
-        <ul class="header__menu-list">
-          <li class="header__list">
-            <a class="header__link" href="#">Products</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link" href="#">Features</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link" href="#">Marketplace</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link" href="#">Company</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link header__link--login" href="#">Log in</a>
-          </li>
-        </ul>
-        <label for="header__toggle">
-          <i class="fas fa-bars fa-lg"></i>
-        </label>
-      </nav>
+    <div class="card">
+      <header class="header">
+        <nav class="header__navbar">
+          <!-- logo -->
+          <div class="header__logo">
+            <i class="fas fa-laptop fa-2x"></i>
+          </div>
+          <!-- input -->
+          <input type="checkbox" id="header__toggle" class="header__toggle" />
+          <!-- navbar menu  -->
+          <ul class="header__menu-list">
+            <li class="header__list">
+              <a class="header__link" href="#">Products</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="#">Features</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="#">Marketplace</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="#">Company</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link header__link--login" href="#">Log in</a>
+            </li>
+          </ul>
+          <label for="header__toggle">
+            <i class="fas fa-bars fa-lg hamburger-icon"></i>
+          </label>
+        </nav>
 
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Data to enrich your</span>
-          <span class="heading-primary--sub">online business</span>
-        </h1>
-        <p class="header__text">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">Data to enrich your</span>
+            <span class="heading-primary--sub">online business</span>
+          </h1>
+          <p class="header__text">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
 
-        <div class="btn">
-          <button class="btn--purple">Get started</button>
-          <button class="btn--grey">Live demo</button>
+          <div class="btn">
+            <button class="btn--purple">Get started</button>
+            <button class="btn--grey">Live demo</button>
+          </div>
         </div>
+      </header>
+      <div class="image-box">
+        <img src="./images/2-code.jpg" alt="2 people talking" />
       </div>
-    </header>
+    </div>
   </body>
 </html>
