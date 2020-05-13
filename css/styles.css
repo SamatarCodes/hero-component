@@ -9,8 +9,7 @@
 body {
   font-size: 62.5%;
   line-height: 1.7;
-  font-family: 'Roboto', sans-serif;
-  background: lightgrey; }
+  font-family: 'Roboto', sans-serif; }
 
 .card {
   height: 95vh; }
@@ -36,7 +35,7 @@ a {
   position: relative; }
   .header__navbar .header__toggle {
     display: none; }
-  .header__navbar .header__toggle:checked ~ ul {
+  .header__navbar .header__toggle:checked ~ .header__menu-list {
     display: block;
     z-index: 100; }
   .header__navbar .header__menu-list {
@@ -109,5 +108,48 @@ a {
   width: 100%; }
 
 @media (max-width: 831px) {
-  .image-box img {
-    height: 25rem; } }
+  .image-box {
+    background-image: url("/images/2-code.jpg");
+    height: 45vh;
+    background-size: cover;
+    background-position: center; }
+    .image-box img {
+      display: none; } }
+
+@media (min-width: 831px) {
+  .header__navbar {
+    display: flex;
+    justify-content: space-between; }
+    .header__navbar .header__menu-list {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      position: static;
+      top: 0;
+      width: auto;
+      background-color: transparent;
+      border-radius: 0;
+      width: 75%;
+      box-shadow: none; }
+    .header__navbar .header__list {
+      display: flex;
+      justify-content: start;
+      align-items: center; }
+      .header__navbar .header__list:first-child {
+        margin: 0; }
+      .header__navbar .header__list:last-child {
+        color: #554ee5;
+        margin: 0;
+        padding: 0; }
+      .header__navbar .header__list:hover {
+        background: #e5edff; }
+  .hamburger-icon {
+    display: none; }
+  .image-box {
+    background-image: url("/images/2-code.jpg");
+    height: 45vh;
+    background-size: cover;
+    background-position: center; }
+    .image-box img {
+      display: none; } }

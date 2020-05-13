@@ -17,8 +17,7 @@ body {
   font-size: 62.5%;
   line-height: 1.7;
   font-family: 'Roboto', sans-serif;
-
-  background: lightgrey;
+  // background: lightgrey;
 }
 .card {
   height: 95vh;
@@ -56,7 +55,7 @@ a {
   }
 
   //   input checked
-  .header__toggle:checked ~ ul {
+  .header__toggle:checked ~ .header__menu-list {
     display: block;
     z-index: 100;
   }
@@ -163,10 +162,77 @@ a {
   }
 }
 
+// MEDIA QUERIES
+
 @media (max-width: 831px) {
   .image-box {
+    background-image: url('/images/2-code.jpg');
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
     img {
-      height: 25rem;
+      display: none;
+    }
+  }
+}
+
+// MEDIUM
+@media (min-width: 831px) {
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+
+    // ul
+    .header__menu-list {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 0;
+      padding: 0;
+      position: static;
+      top: 0;
+      width: auto;
+      background-color: transparent;
+      border-radius: 0;
+      width: 75%;
+      box-shadow: none;
+    }
+
+    // li
+    .header__list {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:last-child {
+        color: $primary-color;
+        margin: 0;
+        padding: 0;
+      }
+
+      &:hover {
+        background: $button-color;
+      }
+    }
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .image-box {
+    background-image: url('/images/2-code.jpg');
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
+    img {
+      display: none;
     }
   }
 }
