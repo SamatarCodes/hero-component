@@ -162,22 +162,21 @@ a {
   }
 }
 
-// MEDIA QUERIES
+// ***********************************MEDIA QUERIES
 
-@media (max-width: 831px) {
+@media screen and (max-width: 831px) {
   .image-box {
     background-image: url('/images/2-code.jpg');
-    height: 45vh;
+    height: 35vh;
     background-size: cover;
     background-position: center;
-
-    img {
-      display: none;
-    }
+  }
+  .image {
+    display: none;
   }
 }
 
-// MEDIUM
+// MEDIUM MIN-WIDTH 831px
 @media (min-width: 831px) {
   .header__navbar {
     display: flex;
@@ -187,7 +186,7 @@ a {
     .header__menu-list {
       display: flex;
       justify-content: space-between;
-
+      font-size: 1.2rem;
       margin: 0;
       padding: 0;
       position: static;
@@ -195,7 +194,7 @@ a {
       width: auto;
       background-color: transparent;
       border-radius: 0;
-      width: 75%;
+      width: 65%;
       box-shadow: none;
     }
 
@@ -225,14 +224,121 @@ a {
     display: none;
   }
 
+  //  TITLE SECTION
+  .header__text-box {
+    text-align: center;
+    width: 80%;
+    margin: 4rem auto;
+
+    span {
+      display: block;
+      font-size: 4rem;
+      line-height: 1.1;
+      letter-spacing: 0.1rem;
+    }
+
+    .heading-primary--main {
+      font-weight: 900;
+    }
+
+    .heading-primary--sub {
+      color: $primary-color;
+      font-weight: bolder;
+    }
+
+    .header__text {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: $text-color;
+      opacity: 0.8;
+    }
+  }
+
+  // BUTTON
+  .btn {
+    width: 60%;
+    margin: 2rem auto 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  //  IMAGE
   .image-box {
     background-image: url('/images/2-code.jpg');
-    height: 45vh;
+    height: 30rem;
+    max-height: 34rem;
     background-size: cover;
     background-position: center;
+  }
+}
+@media (min-width: 1106px) {
+  .card {
+    max-height: 75vh;
+    display: flex;
+    justify-content: space-around;
 
-    img {
-      display: none;
+    .header {
+      width: 65%;
     }
+    .image-box {
+      background-image: url('/images/2-code.jpg');
+
+      width: 30%;
+      height: auto;
+      background-size: cover;
+      background-position: right;
+    }
+
+    .header__menu-list {
+      font-size: 0.8rem;
+    }
+  }
+
+  .header__text-box {
+    text-align: center;
+    width: 80%;
+    margin: 4rem auto;
+
+    span {
+      font-size: 4rem;
+
+      text-align: left;
+    }
+
+    .heading-primary--sub {
+      color: $primary-color;
+      font-weight: bolder;
+    }
+
+    .header__text {
+      font-size: 1.25rem;
+      color: $text-color;
+
+      text-align: left;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+
+      .btn--purple {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .header__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin-left: 4.1rem;
+  }
+
+  .header__logo {
+    margin-right: 2rem;
+  }
+
+  .header__list {
+    padding: 0;
   }
 }
